@@ -1,6 +1,6 @@
 def max_value_in_array(array):
-    max = 0
+    max = None
     for x in array:
-        if max < x:
+        if max < x or max == None:
             max = x
     return max
