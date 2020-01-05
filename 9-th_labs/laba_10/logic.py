@@ -1,6 +1,5 @@
 def __find_same__(string):
     arr_index = []
-    new_string = ''.join(list(string))
     for i in range(len(string)):
         for j in range(len(string)):
             if string[i] == string[j] and i != j:
