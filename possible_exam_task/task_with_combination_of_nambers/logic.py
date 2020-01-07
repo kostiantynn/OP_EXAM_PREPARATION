@@ -5,13 +5,13 @@ def alghoritm(number):
             break
         if number <= 0:
             raise Exception("Number do not fit the task.")
-        if number % 3 == 0:
+        if number % 3 == 0 and number != 6:
             number /= 3
             result.append(3)
         else:
             number -= 5
             result.append(5)
-            if number % 3 == 0 and number != 0:
+            if number % 3 == 0 and number != 0 and number != 6:
                 number /= 3
                 result.append(3)
     return result[::-1]
