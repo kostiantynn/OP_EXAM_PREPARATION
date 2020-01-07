@@ -1,7 +1,7 @@
 def is_number_fit_the_task(number):
     if number % 3 != 0:
         if (number - 5) % 3 != 0:
-            return False
+            raise Exception("Number is not fit in the task.")
         else: return True
     else: return True
 
