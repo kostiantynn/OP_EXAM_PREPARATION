@@ -1,23 +1,17 @@
-def is_number_fit_the_task(number):
-    if number % 3 != 0:
-        if (number - 5) % 3 != 0:
-            raise Exception("Number is not fit in the task.")
-        else: return True
-    else: return True
-
-
 def alghoritm(number):
     result = []
     while True:
         if number == 1:
             break
+        if number <= 0:
+            raise Exception("Number do not fit the task.")
         if number % 3 == 0:
             number /= 3
             result.append(3)
         else:
             number -= 5
             result.append(5)
-            if number % 3 == 0:
+            if number % 3 == 0 and number != 0:
                 number /= 3
                 result.append(3)
     return result[::-1]
