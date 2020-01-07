@@ -1,2 +1,2 @@
 Task:
-![task.jpg]
+![task](task.jpg)
